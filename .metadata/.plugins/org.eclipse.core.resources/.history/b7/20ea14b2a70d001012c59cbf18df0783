@@ -1,0 +1,6 @@
+package dao;
+
+public class DaoUser {
+	private Connection connection;
+
+}

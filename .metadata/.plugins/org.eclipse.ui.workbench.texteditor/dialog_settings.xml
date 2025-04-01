@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="true"/>
+		<list key="replacehistory">
+			<item value="funcionario"/>
+			<item value="Funcionario"/>
+		</list>
+		<list key="findhistory">
+			<item value="sobrenome"/>
+			<item value="aluno"/>
+			<item value="Aluno"/>
+		</list>
+	</section>
+</section>

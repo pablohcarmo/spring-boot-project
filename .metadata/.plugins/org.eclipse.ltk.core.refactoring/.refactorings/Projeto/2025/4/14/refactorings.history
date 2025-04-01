@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Projeto/src/main/resources/templates/create-funcionarios.html&apos; to &apos;create-funcionario.html&apos;" description="Rename resource &apos;create-funcionarios.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/create-funcionarios.html" name="create-funcionario.html" stamp="1743471215722" updateReferences="true"/>
+</session>

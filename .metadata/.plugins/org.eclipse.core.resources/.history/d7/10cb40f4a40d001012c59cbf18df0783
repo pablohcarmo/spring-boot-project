@@ -1,0 +1,10 @@
+package br.com.sosysters.pojo;
+
+public class DaoUser {
+	private String firstName;
+	private String lastName;
+	private String rg, cpf;
+	private String password;
+	private String report;
+
+}

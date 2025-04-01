@@ -1,0 +1,42 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import br.com.sosysters.pojo.Usuaria;
+
+public class DaoUsuaria {
+	private Connection connection;
+	private String url = "";
+	private String user = "";
+	private String password = "";
+
+	public DaoUsuaria() {
+		try {
+			connection = DriverManager.getConnection(url, user, password);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void insert (Usuaria usuaria) {
+		String sql = "INSERT INTO Users VALUES (?,?,?,?,?,?)";
+		try {
+			PreparedStatement pstmt = connection.prepareStatement(sql);
+			pstmt.setString(1, usuaria.getCpf());
+			pstmt.setString(2, usuaria.getRg());
+			pstmt.setString(3, usuaria.getNome());
+			pstmt.setString(4, usuaria.getSobrenome());
+			pstmt.setDate(5, usuaria.getDataNascimento(usuaria.getDataNascimento().getTime()));
+			pstmt.setString(6, usuaria.getSenha());
+			pstmt.executeQuery();
+		} catch (SQLException e){
+			e.printStackTrace();
+		}
+	}
+
+
+}

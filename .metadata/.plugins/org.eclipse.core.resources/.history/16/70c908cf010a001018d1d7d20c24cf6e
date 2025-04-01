@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+	<title>Cadastro de Aluno</title>
+	</head>
+	<body>
+		<form action="#" th.action=@{alunos}" th:object="${aluno}" method="post"></form>
+	</body>
+</html>

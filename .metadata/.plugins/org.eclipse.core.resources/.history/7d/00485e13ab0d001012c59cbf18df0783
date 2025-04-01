@@ -1,0 +1,15 @@
+package br.com.sosysters.pojo;
+
+import java.sql.Date;
+
+public class User {
+	private String firstName;
+	private String lastName;
+	private String rg, cpf;
+	private Date birthday;
+	private String password;
+	private String report;
+
+
+
+}
