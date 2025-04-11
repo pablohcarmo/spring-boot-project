@@ -16,7 +16,7 @@
 			<td th:text="${aluno.ra}">RA</td>
 			<td th:text="${aluno.nome}">Nome</td>
 			<td th:text="${#dates.format(aluno.dataNascimento, 'dd/MM/yyyy')}">Data de Nascimento</td>
-			<td th:text="${aluno.renda != null ? #numbers.formatCurrency(aluno.renda) : 'Sem Renda'}">Renda</td>
+			<td th:text="${#numbers.formatCurrency(aluno.renda)}">Renda</td>
 		</tr>
 	</table>
 	<a href="/alunos">voltar</a>

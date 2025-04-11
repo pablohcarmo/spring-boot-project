@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de Funcionários</title>
+</head>
+<body>
+	<table border='1'>
+		<tr>
+			<th>RE</th>
+			<th>Nome</th>
+			<th>Salário</th>
+			<th>Data de Admissão</th>
+		</tr>
+		<tr th:each="funcionario: ${funcionarios}">
+			<td th:text="${funcionario.re}">RE</td>
+			<td th:text="${funcionario.nome}">Nome</td>
+			<td th:text="${#numbers.formatCurrency(funcionario.salario)}">Salário</td>
+			<td th:text="${#dates.format(funcionario.dataAdmissao, 'dd/MM/yyyy')}">Data de Admissão</td>
+		</tr>
+	</table>
+	<a href="/funcionarios">voltar</a>
+</body>
+</html>
