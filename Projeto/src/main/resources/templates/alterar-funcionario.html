@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Alteração de Funcionário</title>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+			var dateField = document.getElementById('dataAdm');
+			var currentDate = dateField.value;
+			if( currentDate ) {
+				var dateParts = currentDate.split('-');
+				var fDate = dateParts[2]+'/'+dateParts[1]+'/'+dateParts[0];
+			}
+		dateField.value=fDate;
+		});
+	</script>
+</head>
+<body>
+	<form action="#" th:action="@{/funcionarios/update}" th:object="${funcionario}" method="post">
+		RE:<input type='text' th:field="*{re}"/><br/>
+		Nome:<input type='text' th:field="*{nome}"/><br/>
+		Salário:<input type='text' th:field="*{salario}"/><br/>
+		Data de Admissão:<input type='text' th:field="*{dataAdmissao}" id='dataAdm'/><br/>
+		<input type='submit' value='enviar'/>
+	</form>
+	<a href='/alunos'>voltar</a>
+</body>
+</html>
