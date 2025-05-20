@@ -1,5 +1,0 @@
-package br.com.sosysters.pojo;
-
-public @interface User {
-	
-}
